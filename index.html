@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <title>Coffe Break</title>
+</head>
+<body>
+   <header class="header">
+    <img src="./assets/img/logo.png" alt="Logo Coffee Break" class="logo">
+    <nav class="navbar">
+
+        <label for="menu-toggle" class="menu-label">
+            <img src="./assets/img/16817891716285958033805-128.png" alt="">
+        </label>
+        <input type="checkbox" id="menu-toggle">
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#contacto">Contactos</a></li>
+        </ul>
+        <label for="cart-toggle" class="cart-label">
+            <i class="fa-solid fa-basket-shopping"></i>
+        </label>
+        <input type="checkbox" id="cart-toggle">    
+        <div class="shopp-cart">
+            <div class="box-cart">
+                <i class="fa fa-trash"></i>
+                <img src="./assets/img/cart/cafe1.png" alt="">
+                <div class="cart-cont">
+                    <h3>nombre</h3>
+                    <span class="precio">$ 1000.00 /</span>
+                    <span class="quantity">- 1 +</span>
+                </div>
+            </div>
+            <div class="box-cart">
+                <i class="fa fa-trash"></i>
+                <img src="./assets/img/cart/cafe1.png" alt="">
+                <div class="cart-cont">
+                    <h3>nombre</h3>
+                    <span class="precio">$ 1000.00 /</span>
+                    <span class="quantity">- 1 +</span>
+                </div>
+            </div>
+            <div class="box-cart">
+                <i class="fa fa-trash"></i>
+                <img src="./assets/img/cart/cafe1.png" alt="">
+                <div class="cart-cont">
+                    <h3>nombre</h3>
+                    <span class="precio">$ 1000.00 /</span>
+                    <span class="quantity">- 1 +</span>
+                </div>
+            </div>
+            <div class="total"> Total : $ 1000.00/ -</div>
+            <a href="#" class="btn-cart">Checkout</a>
+        </div>
+        <div class="overlay"></div>
+    </nav>
+   </header>
+<main>
+   <section class="home" id="home">
+    <div class="home-content">
+        <h1>La vida comienza después del café</h1>           
+        <p>Aquí podras llevar tu estilo de vida al siguiente nivel</p>
+        <div class="btn-box">
+            <a href="#shop">Comprar</a>
+            <a href="#contacto">Unirte</a>
+        </div>                
+    </div>
+   </section>
+   
+      <section class="nosotros" id="nosotros">
+    <div class="nosCont">
+        <h2>PREPARÁ TU CAFÉ FAVORITO EXACTAMENTE COMO TE GUSTA</h2>
+        <p>Solo o con leche, frío o caliente, vos tenés el control. En <span>Coffee Break</span>, disfruta de tu Cafe en la comodidad de tu hogar. Disfrutá de tus bebidas favoritas en cuestión de segundos y descubrí por qué somos el número 1 del mundo.</p>
+    </div>
+   </section>
+
+   <section id="shop">
+        <h2>Nuestros cafes</h2>
+        <div class="category">
+            <button class="btn-cofe active">Destacados</button>
+            <button class="btn-cofe">Más vendidos</button>
+            <button class="btn-cofe">Últimos</button>
+        </div>
+        <div class="coffes-cont">
+            <div class="coffe">
+                <h3>Arabica Coffee | Wanderoo</h3>
+                <img src="./assets/img/cafe1.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 3400.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Vittoria Coffee | Expresso</h3>
+                <img src="./assets/img/cafe4.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 1100.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Blue Tokai Coffee</h3>
+                <img src="./assets/img/cafe7.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 1010.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Bombay Island Espresso Blend</h3>
+                <img src="./assets/img/cafe5.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 4500.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Colombian Brew Coffee</h3>
+                <img src="./assets/img/cafe8.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 7040.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Lavazza Caffe Espresso</h3>
+                <img src="./assets/img/cafe6.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 5060.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Lavazza | Cafe Expresso</h3>
+                <img src="./assets/img/cafe3.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 4500.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="coffe">
+                <h3>Cafe instantaneo | Puro Seco</h3>
+                <img src="./assets/img/cafe2.png" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>                    
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$ 1150.00</p>
+                <div class="price">
+                <button class="addBtn">Add</button>
+                <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>        
+   </section>
+   <section id="Blog">
+    <h3>Nuestro <span>Blog</span></h3>
+    <p></p>
+    <div class="blog-box-container">
+            <div class="blog-box">
+            <div class="blog-box-img">
+                <img src="./assets/img/blog1.jpg" alt="blog">
+                <a href="#" class="blog-img-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="blog-box-text">
+                <strong>Café de especialidad | Salud</strong>
+                <a href="#">¿El café descafeinado quita el sueño?</a>
+                <p>¿Sabías que el café descafeinado no es 100% sin cafeína? Muchas personas piensan que al llamarse descafeinado tiene 0% de cafeína, pero eso es totalmente falso puesto que una taza de café descafeinado contiene entre 1 y 7 miligramos de cafeína, esto es muy poca cantidad en comparación con los cafés normales que contienen 40 miligramos de cafeína.</p>
+                <div class="blog-author">
+                    <div class="blog-author-img">
+                        <img src="./assets/img/autor1.jpg" alt="">
+                    </div>
+                    <div class="blog-author-text">
+                        <strong>Alex</strong>
+                        <span>Enero 12, 2023</span>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    <div class="blog-box">
+        <div class="blog-box-img">
+            <img src="./assets/img/blog2.jpg" alt="blog">
+            <a href="#" class="blog-img-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+        <div class="blog-box-text">
+            <strong>Café de especialidad | Recetas</strong>
+            <a href="#">¿Qué es un café latte? 7 recetas para prepararlo</a>
+            <p>Para todos los amantes del café o la gente que se está iniciando en este mundo, saber cómo preparar un buen café desde casa y poder disfrutarlo tanto o más que el café de un bar es fundamental. En este artículo, os contaremos una de las muchas variedades que tiene el café, qué es un café latte, qué diferencia existe con el café con leche y los pasos que tienes que seguir para hacer el café latte perfecto.</p>
+            <div class="blog-author">
+                <div class="blog-author-img">
+                    <img src="./assets/img/autor2.jpg" alt="">
+                </div>
+                <div class="blog-author-text">
+                    <strong>Mica</strong>
+                    <span>Enero 12, 2023</span>
+                </div>
+            </div>
+        </div>
+        
+</div>
+<div class="blog-box">
+    <div class="blog-box-img">
+        <img src="./assets/img/blog3.jpg" alt="blog">
+        <a href="#" class="blog-img-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+    <div class="blog-box-text">
+        <strong>Café de especialidad | Listados</strong>
+        <a href="#">El secreto de un buen café: ¿cuál es la diferencia entre ristretto, espresso y lungo?</a>
+        <p>Con una técnica similar en cuanto a su preparación, estas tres formas de tomar café son muy populares tanto dentro como fuera de bares y cafeterías. En este post, vamos a hablar sobre cuál es la diferencia entre ristretto, espresso y lungo, y cómo cambia el sabor y la concentración de cafeína por esta razón.</p>
+        <div class="blog-author">
+            <div class="blog-author-img">
+                <img src="./assets/img/autor3.jpg" alt="">
+            </div>
+            <div class="blog-author-text">
+                <strong>Agus</strong>
+                <span>Enero 12, 2023</span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+   </section>
+   <!-- CONTACTO -->
+<section id="contacto">
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.15241005905!2d-58.51570611893281!3d-34.61589254863589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1683157628044!5m2!1ses!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="form-contact">
+        <h2>Contactanos</h2>
+        <form>
+            <input type="text" placeholder="Name" class="form-contact-txt">
+            <input type="email" placeholder="Email" class="form-contact-txt">
+            <textarea placeholder="Mensaje" class="form-contact-txtarea"></textarea>
+            <input type="submit" name="Submit" placeholder="Enviar" class="form-contact-btn">
+        </form>
+    </div>
+</section>
+<div class="login">
+    <div class="btn-box">
+        <a href="./pages/login.html">Inicia Sesión</a>
+        <a href="#">Registrate</a>
+    </div>
+</div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="contenido">
+            <div class="row">
+                <div class="fot-col">
+                    <h4>Compania</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Nuestros Servicios</a></li>
+                        <li><a href="#">Procesos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="fot-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Destacadps</a></li>
+                        <li><a href="#">Más vendidos</a></li>
+                        <li><a href="#">Últimos</a></li>
+                        <li><a href="#">Recomendados</a></li>
+                    </ul>
+                </div>
+                <div class="fot-col">
+                    <h4>Seguinos</h4>
+                    <div class="social-link">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
