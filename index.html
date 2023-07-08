@@ -20,48 +20,51 @@
         <input type="checkbox" id="menu-toggle">
 
         <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#home" class="activeTo">Home</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#shop">Shop</a></li>
             <li><a href="#Blog">Blog</a></li>
             <li><a href="#contacto">Contactos</a></li>
         </ul>
-        <label for="cart-toggle" class="cart-label">
-            <i class="fa-solid fa-basket-shopping"></i>
-        </label>
-        <input type="checkbox" id="cart-toggle">    
-        <div class="shopp-cart">
-            <div class="box-cart">
-                <i class="fa fa-trash"></i>
-                <img src="./assets/img/cart/cafe1.png" alt="">
-                <div class="cart-cont">
-                    <h3>nombre</h3>
-                    <span class="precio">$ 1000.00 /</span>
-                    <span class="quantity">- 1 +</span>
-                </div>
-            </div>
-            <div class="box-cart">
-                <i class="fa fa-trash"></i>
-                <img src="./assets/img/cart/cafe1.png" alt="">
-                <div class="cart-cont">
-                    <h3>nombre</h3>
-                    <span class="precio">$ 1000.00 /</span>
-                    <span class="quantity">- 1 +</span>
-                </div>
-            </div>
-            <div class="box-cart">
-                <i class="fa fa-trash"></i>
-                <img src="./assets/img/cart/cafe1.png" alt="">
-                <div class="cart-cont">
-                    <h3>nombre</h3>
-                    <span class="precio">$ 1000.00 /</span>
-                    <span class="quantity">- 1 +</span>
-                </div>
-            </div>
-            <div class="total"> Total : $ 1000.00/ -</div>
-            <a href="#" class="btn-cart">Checkout</a>
+
+        <div class="cart-label">
+            <i class="fa-solid fa-basket-shopping">
+                <div class="burbuja">0</div>
+            </i>
         </div>
+
+            <div class="shopp-cart">
+                <h2>Mi carrito</h2>
+
+                <div class="item-cart">
+
+                    <div class="box-cart">
+
+                        <img src="./assets/img/cart/cafe1.png" alt="">
+                        <div class="cart-cont">
+                            <h3>nombre</h3>
+                            <span class="precio">$ 1000.00</span>
+                        </div>
+                        <div class="quantity-menu">
+                            <span class="quantity-man menos" data-id="ID">-</span>
+                            <span class="quantity">CA</span>
+                            <span class="quantity-man mas" data-id="ID">+</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <span class="divider"></span>
+
+                <div class="total-buy">
+                    <p>Total:</p>
+                    <span class="total">$ 1000,00</span>
+                </div>
+                <a href="#" class="btn-buy">COMPRAR</a>
+                <a href="#" class="btn-vaciar">vaciar compra</a>
+            </div>
         <div class="overlay"></div>
+
     </nav>
    </header>
 <main>
@@ -86,11 +89,15 @@
    <section id="shop">
         <h2>Nuestros cafes</h2>
         <div class="category">
-            <button class="btn-cofe active">Destacados</button>
-            <button class="btn-cofe">Más vendidos</button>
-            <button class="btn-cofe">Últimos</button>
+            <button class="btn-cofe active">Todos</button>
+            <button class="btn-cofe" data-category="destacados">Destacados</button>
+            <button class="btn-cofe" data-category="vendidos">Más vendidos</button>
+            <button class="btn-cofe" data-category="ultimos">Últimos</button>
         </div>
         <div class="coffes-cont">
+           
+<!--             CONTENIDO A RENDERIZAR
+           
             <div class="coffe">
                 <h3>Arabica Coffee | Wanderoo</h3>
                 <img src="./assets/img/cafe1.png" alt="">
@@ -103,123 +110,17 @@
                 </div>
                 <p>$ 3400.00</p>
                 <div class="price">
-                <button class="addBtn">Add</button>
+                <button class="addBtn" data-id="id"
+                data-name="name"
+                data-price="price"
+                data-img="img" >Add</button>
                 <i class="fa-solid fa-heart"></i>
                 </div>
             </div>
-            <div class="coffe">
-                <h3>Vittoria Coffee | Expresso</h3>
-                <img src="./assets/img/cafe4.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 1100.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="coffe">
-                <h3>Blue Tokai Coffee</h3>
-                <img src="./assets/img/cafe7.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 1010.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="coffe">
-                <h3>Bombay Island Espresso Blend</h3>
-                <img src="./assets/img/cafe5.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 4500.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="coffe">
-                <h3>Colombian Brew Coffee</h3>
-                <img src="./assets/img/cafe8.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 7040.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="coffe">
-                <h3>Lavazza Caffe Espresso</h3>
-                <img src="./assets/img/cafe6.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 5060.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="coffe">
-                <h3>Lavazza | Cafe Expresso</h3>
-                <img src="./assets/img/cafe3.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 4500.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="coffe">
-                <h3>Cafe instantaneo | Puro Seco</h3>
-                <img src="./assets/img/cafe2.png" alt="">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>                    
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>$ 1150.00</p>
-                <div class="price">
-                <button class="addBtn">Add</button>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-        </div>        
+ --> 
+        </div>  
+        <button class="btn-more">Ver Más</button>
+    
    </section>
    <section id="Blog">
     <h3>Nuestro <span>Blog</span></h3>
@@ -351,6 +252,8 @@
             </div>
         </div>
     </div>
-</footer>
+    </footer>
+        <script src="data.js"></script>
+        <script src="index.js"></script>
 </body>
 </html>
