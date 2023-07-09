@@ -79,7 +79,7 @@ body {
     color: var(--brown)
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover, .navbar a.activeTo {
     color: var(--brown);
 }
 
@@ -236,8 +236,8 @@ body {
 
 .burbuja {
     position: absolute;
-    top: 20px;
-    right: 55px;
+    top: 17px;
+    right: 10px;
     text-align: center;
     background: var(--brown);
     color: var(--black);
@@ -261,7 +261,6 @@ body {
     color: var(--grey);
     font-size: 14px;
 }
-
 
 .menu-label img {
     width: 35px;
@@ -519,7 +518,7 @@ border: 3px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .btn-more {

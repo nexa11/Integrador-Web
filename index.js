@@ -4,7 +4,9 @@ const categoriasCafe = document.querySelector(".category");
 const listaCategorias = document.querySelectorAll("btn-cofe");
 const cartBtn = document.querySelector(".cart-label");
 const cartMenu = document.querySelector(".shopp-cart");
-
+const menuBtn = document.querySelector(".menu-label");
+const barsMenu = document.querySelector(".navlist");
+const overlay = document.querySelector(".overlay");
 
 
 const cafeTemplate = (producto) => {
@@ -82,7 +84,7 @@ const cambiarEstado = (btn) => {
 }
 
 const renderFiltroDeProductos = () => {
-    const productosFiltrados = cafeData.filter(() => {
+    const productosFiltrados = cafeData.filter((product) => {
         return product.category === appState.activeFilter;
     });
     renderCafes(productosFiltrados);
@@ -108,6 +110,20 @@ const aplicarFiltro = ({target}) => {
 
 const toggleCart = () => {
     cartMenu.classList.toggle("open-cart");
+    if (basMenu.classList.contains("open-menu")){
+        barsMenu.classList.remove("open-menu");
+        return
+    }
+    overlay.classList.toggle("show-overlay");
+}
+
+const toggleMenu = () => {
+    barsMenu.classList.toggle("open-menu");
+    if (cartMenu.classList.contains("open-cart")) {
+        cartMenu.classList.remove("open-cart");
+        return;
+    }
+    overlay.classList.toggle("show-overlay");
 }
 
 const init = () => {
@@ -115,6 +131,7 @@ const init = () => {
     moreBtn.addEventListener("click", mostrarMas);
     categoriasCafe.addEventListener("click", aplicarFiltro);
     cartBtn.addEventListener("click", toggleCart);
+    menuBtn.addEventListener("click", toggleMenu);
 }
 
 init();
@@ -122,4 +139,3 @@ init();
 
 
 
-// 1 hora 10 min  NO ENTIENDOOOOOOOOOOOOOOOOOOOOOOOOO
