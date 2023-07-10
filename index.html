@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Break</title>
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./assets/img/coffee180.png"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/img/coffee32.png"
+/>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./assets/img/coffee16.png"
+/>
     <link rel="stylesheet" href="./styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./mediaqueries.css">
-    <title>Coffe Break</title>
+
 </head>
 <body>
    <header class="header">
@@ -19,11 +37,11 @@
         </div>
 
         <ul class="navlist">
-            <li><a href="#home" class="activeTo">Home</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#Blog">Blog</a></li>
-            <li><a href="#contacto">Contactos</a></li>
+            <li><a href="#home" class="nav- link activeTo">Home</a></li>
+            <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li><a class="nav-link" href="#shop">Shop</a></li>
+            <li><a class="nav-link" href="#Blog">Blog</a></li>
+            <li><a class="nav-link" href="#contacto">Contactos</a></li>
         </ul>
 
         <div class="cart-label">
@@ -37,8 +55,8 @@
 
             <div class="item-cart">
 
-                <div class="box-cart">
-                        <img src="./assets/img/cart/cafe1.png" alt="">
+                <!-- <div class="box-cart">
+                        <img src="./assets/img/cafe1.png" alt="">
                     <div class="cart-cont">
                         <h3>nombre</h3>
                         <span class="precio">$ 1000.00</span>
@@ -48,7 +66,7 @@
                         <span class="quantity">CA</span>
                         <span class="quantity-man mas" data-id="ID">+</span>
                     </div>
-                </div>
+                </div> -->
                 
             </div>
             
@@ -122,7 +140,6 @@
    </section>
    <section id="Blog">
     <h3>Nuestro <span>Blog</span></h3>
-    <p></p>
     <div class="blog-box-container">
             <div class="blog-box">
             <div class="blog-box-img">
@@ -251,6 +268,7 @@
         </div>
     </div>
     </footer>
+        <div class="add-modal"></div>
         <script src="data.js"></script>
         <script src="index.js"></script>
 </body>

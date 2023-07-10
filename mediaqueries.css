@@ -31,8 +31,19 @@
         cursor: pointer;
     }
 
-    #menu-toggle:checked + .navlist {
+    .menu-label img {
         display: flex;
+        width: 35px;
+    }
+
+    .burbuja {
+        position: absolute;
+        top: 17px;
+        right: 55px;
+    }
+
+    .open-menu {
+    display: flex;
     }
 }
 
