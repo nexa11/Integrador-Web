@@ -59,7 +59,7 @@ const cafeData = [
         id: 9,
         name: "King Coffe",
         price: "1110",
-        category: "ultmos",
+        category: "ultimos",
         cafeImg: "./assets/img/cafe9.png",
     },
     {

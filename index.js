@@ -62,16 +62,17 @@ const mostrarMas = () => {
     }
 };
 
-const btnInactive = (elemento) => {
+const btnInactive = (element) => {
     return (
-        elemento.classList.contains("btn-cofe") && !elemento.classList.contains("active")
+        element.classList.contains("btn-cofe") && 
+        !element.classList.contains("active")
     )
 }
 
-const cambioEstadoBtn = (seleccionCategoria) => {
+const cambioEstadoBtn = (selectedCategory) => {
     const categorias = [...listaCategorias];
     categorias.forEach((categoryBtn) => {
-        if(categoryBtn.dataset.category !== seleccionCategoria) {
+        if(categoryBtn.dataset.category !== selectedCategory) {
             categoryBtn.classList.remove("active");
             return;
         }
@@ -81,18 +82,18 @@ const cambioEstadoBtn = (seleccionCategoria) => {
 
 const setVerMasVisibility = () => {
     if (!appState.activeFilter) {
-        moreBtn.classList.remove("hidden")
+        moreBtn.classList.remove("hidden");
         return;
     }
-    moreBtn.classList.add("hidden")
-}
+    moreBtn.classList.add("hidden");
+};
 
 const cambiarEstado = (btn) => {
     appState.activeFilter = btn.dataset.category;
     cambioEstadoBtn(appState.activeFilter);
     setVerMasVisibility();
 
-}
+};
 
 const renderFiltroDeProductos = () => {
     const productosFiltrados = cafeData.filter((product) => {
@@ -106,6 +107,7 @@ const aplicarFiltro = ({target}) => {
         return; 
     }
     cambiarEstado(target);
+
     cafeContainer.innerHTML = "";
     if(appState.activeFilter) {
         renderFiltroDeProductos();

@@ -1,4 +1,9 @@
 @media (max-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     .navbar {
         gap: 10px;
     }
@@ -45,10 +50,49 @@
     .open-menu {
     display: flex;
     }
+
 }
 
+@media (max-width: 576px) {
+    main {
+        width:  auto;
+    }
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-content h1{
+        text-align: center;
+    }
+    .home-content p {
+        text-align: center;
+    }
+    .nosotros {
+        width: 100%;
+    }
 
+    .row li {
+        padding: 5px;
+    }
 
+  }
 
+  @media (max-width: 730px) {
+    .blog-box-container {
+        flex-direction: column;
+    }
+  }
+  @media (max-width: 425px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .row fot-col social-link {
+text-align: center;
+    }
+  }
 
 
