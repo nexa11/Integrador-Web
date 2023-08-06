@@ -334,7 +334,7 @@ header {
     margin: 20px 0 40px;
 }
 
-.home-content .btn-box {
+.btn-box {
     display: flex;
     justify-content: space-between;
     width: 345px;
